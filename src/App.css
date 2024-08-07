@@ -26,7 +26,7 @@
     }
   
     .table tbody td {
-      font-size: 0.875rem; 
+      font-size: 0.65rem; 
     }
   
     .btn {
@@ -44,6 +44,10 @@
 
       .btn-danger{
         margin-top: 7%;
+      }
+
+      .widthmob{
+        width: 85% !important;
       }
   }
   

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Login.css"
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import "./Login.css";
 
 const Login = ({ setAuthenticated }) => {
   const initialFormState = { name: "", password: "" };
@@ -21,12 +23,15 @@ const Login = ({ setAuthenticated }) => {
       setAuthenticated(true);
       navigate("/");
     } else {
-      alert("Please enter correct values");
+      toast.error("Incorrect username or password. Please try again.", {
+        position: "top-right",
+      });
     }
   };
 
   return (
     <div className="login-container">
+      <ToastContainer />
       <div className="login-content">
         <div className="card">
           <div className="card-header">

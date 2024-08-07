@@ -1,3 +1,19 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "1",
+      "name": "Veeramanikandan L",
+      "email": "apkveeraa@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "admin",
+      "email": "vmathan360@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "admin",
+      "email": "apkveeraa@gmail.com"
+    }
+  ]
 }

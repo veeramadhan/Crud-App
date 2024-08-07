@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import "./App.css"
 
 const Create = () => {
   const [inputData, setInputData] = useState({ name: '', email: '' });
@@ -30,7 +31,7 @@ const Create = () => {
 
   return (
     <div className="d-flex w-100 vh-100 justify-content-center align-items-center">
-      <div className="w-50 border bg-light p-5">
+      <div className="w-50 border bg-light p-5 widthmob">
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor='name'>Name:</label>

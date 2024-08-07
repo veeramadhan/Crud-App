@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
+import "./App.css"
 
 const Update = () => {
     const { id } = useParams();
@@ -24,7 +25,7 @@ const Update = () => {
 
     return (
         <div className="d-flex w-100 vh-100 justify-content-center align-items-center">
-            <div className="w-50 border bg-light p-5">
+            <div className="w-50 border bg-light p-5 widthmob">
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name">ID:</label>
